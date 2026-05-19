@@ -81,8 +81,8 @@ The list is **always** printed for transparency. When `/handover-resume` is call
    ```
    Recent handovers for <project_slug>:
      1. 09:04 today    — empty-state-simplify-projection-loop-fix (iter 2)
-     2. 00:19 today    — wishlist-redesign-rollout (iter 5)
-     3. 18:44 yesterday — debug-netlify-build
+     2. 00:19 today    — checkout-flow-refactor (iter 5)
+     3. 18:44 yesterday — debug-ci-build
    ```
 
 3. **Resolve the pick:**

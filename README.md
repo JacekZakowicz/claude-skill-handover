@@ -42,8 +42,8 @@ Picks up a saved handover and resumes work:
 ~/.claude/handovers/
   <project-slug>/
     2026-05-18-1432-empty-state-projection-fix.md
-    2026-05-18-2210-wishlist-redesign-rollout.md
-    2026-05-19-0904-debug-netlify-build.md
+    2026-05-18-2210-checkout-flow-refactor.md
+    2026-05-19-0904-debug-ci-build.md
 ```
 
 `<project-slug>` is the basename of the main git worktree (or `cwd` if not a git repo), lowercased and kebab-cased.
@@ -95,10 +95,10 @@ If there are no existing handovers for this project, creates a new one with an a
 If there are existing handovers, asks whether to update the most recent (bump `iteration`), create a new one, or update a different one.
 
 ```
-/handover wishlist-redesign
+/handover checkout-flow
 ```
 
-Skips the prompt. If a handover with `wishlist-redesign` in the slug exists, updates it. Otherwise creates a new one with that label.
+Skips the prompt. If a handover with `checkout-flow` in the slug exists, updates it. Otherwise creates a new one with that label.
 
 ### Resuming a handover
 
@@ -115,7 +115,7 @@ Prints the recent handovers list and asks which to load.
 Loads the most recent (1st in the list).
 
 ```
-/handover-resume wishlist
+/handover-resume checkout
 ```
 
 Exact substring match against handover filenames; falls back to fuzzy match if no substring hit.
