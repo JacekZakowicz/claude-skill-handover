@@ -4,14 +4,14 @@
   "owner": { "name": "JacekZakowicz" },
   "metadata": {
     "description": "/handover and /handover-resume — save session state and resume it after /clear",
-    "version": "1.0.1"
+    "version": "1.0.2"
   },
   "plugins": [
     {
       "name": "claude-skill-handover",
       "source": "./",
       "description": "/handover saves session state to a rich compounding markdown doc. /handover-resume loads it in the next session with fuzzy search.",
-      "version": "1.0.1",
+      "version": "1.0.2",
       "author": { "name": "JacekZakowicz" },
       "keywords": ["handover", "session", "resume", "context", "workflow"],
       "category": "workflow"

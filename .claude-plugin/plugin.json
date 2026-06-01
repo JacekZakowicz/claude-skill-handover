@@ -1,7 +1,7 @@
 {
   "name": "claude-skill-handover",
   "description": "/handover and /handover-resume — save session state to a rich markdown doc and resume it in the next session",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "author": { "name": "JacekZakowicz" },
   "license": "MIT",
   "keywords": ["handover", "session", "resume", "context", "workflow"],
