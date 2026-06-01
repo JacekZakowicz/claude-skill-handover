@@ -20,7 +20,8 @@ worktrees of the same repo share one handover folder. Fall back to cwd if
 not in a git repo.
 
 ```bash
-project_root=$(git worktree list --porcelain 2>/dev/null | awk '/^worktree / {print $2; exit}')
+# print everything after "worktree " so paths containing spaces survive intact
+project_root=$(git worktree list --porcelain 2>/dev/null | awk '/^worktree /{sub(/^worktree /,"");print;exit}')
 [[ -z "$project_root" ]] && project_root=$(pwd)
 project_slug=$(basename "$project_root" \
   | tr '[:upper:]' '[:lower:]' | tr -c 'a-z0-9' '-' \
